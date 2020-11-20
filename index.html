@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Web</title>
+    <link rel="stylesheet" href="./css/stylce.css">
+</head>
+<body>
+    <!--Header-->
+    <header id="header" class="parallax">
+        <div id="divImg">
+            <nav>
+                <ul>
+                    <li class="marque">Marque</li>
+                    <li class="onglet deroulant"><a href="">Page 1</a>
+                        <ul class="sous">
+                            <li class="sousOnglet"><a href="" class="sousOnglet">Sous-Page 1</a></li>
+                            <li class="sousOnglet"><a href="" class="sousOnglet">Sous-Page 2</a></li>
+                            <li class="sousOnglet"><a href="" class="sousOnglet">Sous-Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="onglet deroulant"><a href="">Page 2</a>
+                        <ul class="sous">
+                            <li class="sousOnglet"><a href="" class="sousOnglet">Sous-Page 1</a></li>
+                            <li class="sousOnglet"><a href="" class="sousOnglet">Sous-Page 2</a></li>
+                            <li class="sousOnglet"><a href="" class="sousOnglet">Sous-Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="onglet"><a href="">Page 3</a></li>
+                    <li>
+                        <button onclick="document.getElementById('id01').style.display='block'"
+                        class="w3-button">Inscription</button>
+                   </li>
+                </ul>
+
+                <div class="textInImage">
+                    <h1>Jumbotron</h1>
+                    <p>Ceci est un jumbroton que je n'ai pas eu le temps de faire ni le parallax</p>
+                    <button>Plus d'info sur W3School</button>
+                </div>
+
+                <img id="imgHeader" src="./images/header.jpg" alt="header">
+            </nav>            
+        </div>        
+    </header>
+    <!--Fin Header-->
+
+    <!--Corps de la page-->
+
+
+<!--Modal Inscription-->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+        <form action="action_page.php">
+            <div class="container-form">
+              <h1>Inscription</h1>
+              <hr>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Entrer un Email" name="email" id="email" required>
+          
+              <label for="psw"><b>Mot de passe</b></label>
+              <input type="password" placeholder="Entrer un mot de passe" name="psw" id="psw" required>
+          
+              <label for="psw-repeat"><b>Confirmation Mot de passe</b></label>
+              <input type="password" placeholder="Confirmez votre mot de passe" name="psw-repeat" id="psw-repeat" required>
+              <hr>
+          
+              <button type="submit" class="registerbtn">Inscription</button>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+        <div class="liste">
+            <p class="list">Cagemini</p>
+            <p class="list">Linkedln</p>
+            <p class="list">Je suis un Dev</p>
+            <p class="list">Les joies du code</p>            
+        </div>
+        <div class="article">
+            <article>
+                <h1>Article</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi minus est officia molestias commodi repudiandae explicabo consequuntur temporibus libero quos delectus necessitatibus ipsum accusamus magni, atque, enim dolores assumenda impedit.</p>
+            </article>
+
+            <article>
+                <h1>Article</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi minus est officia molestias commodi repudiandae explicabo consequuntur temporibus libero quos delectus necessitatibus ipsum accusamus magni, atque, enim dolores assumenda impedit.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus doloremque animi saepe asperiores cupiditate, nisi, vel veniam nam quos vero tempore id ea eos, commodi amet sunt nulla. Illo, recusandae?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, enim! Porro voluptates amet dignissimos nam sapiente odio quod, maiores commodi, nemo animi hic ratione voluptatem quasi, cumque ut consectetur maxime.
+                </p>
+            </article>
+
+            <article>
+                <h1>Article</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi minus est officia molestias commodi repudiandae explicabo consequuntur temporibus libero quos delectus necessitatibus ipsum accusamus magni, atque, enim dolores assumenda impedit.</p>
+            </article>
+
+            <article>
+                <h1>Article</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi minus est officia molestias commodi repudiandae explicabo consequuntur temporibus libero quos delectus necessitatibus ipsum accusamus magni, atque, enim dolores assumenda impedit.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus doloremque animi saepe asperiores cupiditate, nisi, vel veniam nam quos vero tempore id ea eos, commodi amet sunt nulla. Illo, recusandae?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, enim! Porro voluptates amet dignissimos nam sapiente odio quod, maiores commodi, nemo animi hic ratione voluptatem quasi, cumque ut consectetur maxime.
+                </p>
+            </article>             
+        </div>
+        </div>        
+    </div>
+<!--Fin Corps de page-->
+
+<!--footer-->
+    <footer>
+        <div class="container-footer">
+            <div class="footer">
+                <h1>Nos Magasins</h1>
+
+            </div>
+
+            <div class="footer">
+                <h1>Nos Horaires</h1>
+            </div>
+            <div class="footer">
+                <h1>Nous Contacter</h1>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

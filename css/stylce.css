@@ -1,0 +1,205 @@
+
+#imgHeader{
+width: 100%;
+height: 300px;
+border-bottom: 30px solid rgb(56, 56, 56);
+
+}
+
+.parallax {
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+ul{
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+
+
+}
+
+li {
+    list-style: none;
+}
+
+nav ul li {
+    float:left;
+    width: 25%;
+    text-align: center;
+}
+
+nav ul::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: grey;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover {
+    color: white;
+    border-bottom: 2px solid grey;
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: grey;
+}
+
+nav > ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: grey;
+}
+
+.deroulant > a:after {
+    content: icon;
+    font-size: 12px;
+}
+
+.marque {
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 22px;
+}
+
+.onglet {
+    color: grey;
+    font-size: x-large;
+    margin: 30px;
+
+}
+
+.sousOnglet {
+    color: white;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+footer{
+    background-color: rgb(56, 56, 56);
+    height: 300px;
+}
+
+.list {
+    color: rgb(49, 49, 255);
+    font-size: x-large;
+
+}
+
+.container {
+    display: flex;
+}
+
+.liste {
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article {
+    width: 100%;
+    flex-direction: column;   
+    justify-items: center;
+    align-items: center; 
+    margin-left: 20%;
+}
+
+article {
+    width: 50%;
+
+}
+
+h1{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.footer {
+    display: flex;
+    color: grey;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-around;
+    margin: 30px;
+
+
+}
+
+.w3-button {
+    margin-top: 33px;
+    border-radius: 10px;
+    background-color: rgb(56, 56, 56);
+    color: grey;
+}
+
+.w3-modal {
+    
+    width: 50%;
+    margin-top: 10px;
+    background-color: grey;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 10px;
+    z-index: 99999999;
+    position: relative;
+    margin-left: 26%;
+    
+}
+
+.w3-container {
+    width: 100%;
+    height: 300px;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.w3-modal-content{
+    width: 100%;
+}
+
+.textInImage {
+    font-size: xx-large;
+    color: white;
+    z-index: 9999999;
+    position: absolute;
+    left: 460px;
+    top: 121px;
+}
